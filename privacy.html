@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Aurelia Room Theory</title>
+  <meta name="description" content="Privacy Policy for Aurelia Room Theory — how we collect, use, and protect your personal information.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Aurelia Room Theory">
+  <meta property="og:description" content="Read our privacy policy to understand how we handle your data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aureliaroomtheory.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aureliaroomtheory.com/privacy.html">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #faf9f7;
+      color: #1e1e1e;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER (consistent with main page) */
+    .site-header {
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid #e6e2dd;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #1e1e1e;
+      line-height: 1;
+    }
+
+    .logo span {
+      color: #8b6b4d;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-nav a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #3d3d3d;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #8b6b4d;
+    }
+
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: #8b6b4d;
+      transition: width 0.25s;
+    }
+
+    .main-nav a:hover::after,
+    .main-nav a.active::after {
+      width: 100%;
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      background: #f5f3f0;
+      border-radius: 40px;
+      padding: 6px 16px;
+      border: 1px solid #e6e2dd;
+    }
+
+    .search-wrap input {
+      border: none;
+      background: transparent;
+      padding: 8px 6px 8px 0;
+      font-size: 0.85rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      width: 180px;
+      color: #1e1e1e;
+    }
+
+    .search-wrap input::placeholder {
+      color: #9b9b9b;
+      font-weight: 300;
+    }
+
+    .search-wrap button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #8b6b4d;
+      padding: 4px 0 4px 8px;
+      transition: transform 0.2s;
+    }
+
+    .search-wrap button:hover {
+      transform: scale(1.1);
+    }
+
+    /* PRIVACY PAGE SPECIFIC */
+    .privacy-hero {
+      margin: 48px 0 32px;
+      text-align: center;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .privacy-hero h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .privacy-hero h1 span {
+      font-style: italic;
+      font-weight: 400;
+      color: #8b6b4d;
+    }
+
+    .privacy-hero p {
+      font-size: 1.05rem;
+      color: #4a4a4a;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .last-updated {
+      font-size: 0.8rem;
+      color: #8b6b4d;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+
+    .privacy-content {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #ece8e3;
+      padding: 48px 56px;
+      margin: 20px 0 60px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    }
+
+    .privacy-content h2 {
+      font-size: 1.6rem;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #eeeae5;
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.2rem;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
+
+    .privacy-content p {
+      font-size: 0.95rem;
+      color: #3d3d3d;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .privacy-content ul,
+    .privacy-content ol {
+      margin: 16px 0 20px 24px;
+      font-size: 0.95rem;
+      color: #3d3d3d;
+      line-height: 1.75;
+    }
+
+    .privacy-content li {
+      margin-bottom: 8px;
+    }
+
+    .privacy-content a {
+      color: #8b6b4d;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .privacy-content a:hover {
+      color: #1e1e1e;
+      border-bottom-color: #8b6b4d;
+    }
+
+    .privacy-content strong {
+      font-weight: 600;
+      color: #1e1e1e;
+    }
+
+    .highlight-box {
+      background: #f8f6f3;
+      border-left: 4px solid #8b6b4d;
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 28px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.92rem;
+      color: #3d3d3d;
+    }
+
+    .privacy-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 28px;
+      font-size: 0.9rem;
+    }
+
+    .privacy-content th {
+      background: #f5f3f0;
+      text-align: left;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: #1e1e1e;
+      border-bottom: 1px solid #ddd8d2;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .privacy-content td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eeeae5;
+      color: #3d3d3d;
+      vertical-align: top;
+    }
+
+    .privacy-content tr:last-child td {
+      border-bottom: none;
+    }
+
+    .contact-ref {
+      background: #f3efe9;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 32px 0 8px;
+      font-size: 0.92rem;
+      color: #3d3d3d;
+      line-height: 1.7;
+    }
+
+    .contact-ref strong {
+      color: #1e1e1e;
+    }
+
+    /* NEWSLETTER (same as main) */
+    .newsletter-section {
+      background: #f3efe9;
+      border-radius: 16px;
+      padding: 40px 44px;
+      margin: 40px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .newsletter-section h2 {
+      font-size: 1.7rem;
+      font-weight: 500;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .newsletter-section p {
+      font-size: 0.9rem;
+      color: #4a4a4a;
+      max-width: 400px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      padding: 12px 18px;
+      border-radius: 40px;
+      border: 1px solid #d6cec6;
+      background: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      min-width: 220px;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .newsletter-form input:focus {
+      border-color: #8b6b4d;
+    }
+
+    .newsletter-form button {
+      background: #1e1e1e;
+      color: #ffffff;
+      border: none;
+      border-radius: 40px;
+      padding: 12px 28px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .newsletter-form button:hover {
+      background: #8b6b4d;
+      transform: translateY(-1px);
+    }
+
+    /* FOOTER (consistent) */
+    .site-footer {
+      background: #1e1e1e;
+      color: #d6d2cd;
+      padding: 56px 0 32px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 320px;
+      color: #a8a29b;
+    }
+
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #b0aaa3;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2f2f2f;
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.75rem;
+      color: #8f8a84;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 16px;
+      }
+      .search-wrap input {
+        width: 140px;
+      }
+      .privacy-hero h1 {
+        font-size: 2.2rem;
+      }
+      .privacy-content {
+        padding: 28px 24px;
+      }
+      .newsletter-section {
+        padding: 28px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .privacy-content table {
+        font-size: 0.82rem;
+      }
+      .privacy-content th,
+      .privacy-content td {
+        padding: 10px 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+      .main-nav ul {
+        gap: 12px;
+      }
+      .main-nav a {
+        font-size: 0.78rem;
+      }
+      .search-wrap input {
+        width: 100px;
+      }
+      .privacy-hero h1 {
+        font-size: 1.8rem;
+      }
+      .privacy-content {
+        padding: 22px 18px;
+      }
+      .privacy-content ul,
+      .privacy-content ol {
+        margin-left: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aurelia <span>Room Theory</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="privacy-hero">
+      <h1>Privacy <span>Policy</span></h1>
+      <p>We respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information.</p>
+      <div class="last-updated">Last updated: 15 January 2025</div>
+    </section>
+
+    <!-- PRIVACY CONTENT -->
+    <div class="privacy-content">
+      <h2>1. Who we are</h2>
+      <p><strong>Aurelia Room Theory</strong> (“we”, “us”, or “our”) is an independent editorial publication covering interior design, architecture, and the art of living well. Our registered address is 48 Bloom Street, London, W1T 3QH, United Kingdom.</p>
+      <p>We are the data controller responsible for your personal data. If you have any questions about this privacy policy or our data practices, please contact us at <a href="mailto:privacy@aureliaroomtheory.com">privacy@aureliaroomtheory.com</a>.</p>
+
+      <h2>2. Information we collect</h2>
+      <p>We may collect and process the following categories of personal data:</p>
+      <ul>
+        <li><strong>Contact information</strong> — your name and email address when you subscribe to our newsletter, submit a contact form, or correspond with us.</li>
+        <li><strong>Correspondence</strong> — the content of messages you send to us, including attachments and metadata.</li>
+        <li><strong>Usage data</strong> — information about how you use our website, such as pages visited, time spent, and referring URLs. This is collected via cookies and similar technologies (see our <a href="cookies.html">Cookies Policy</a>).</li>
+        <li><strong>Technical data</strong> — IP address, browser type and version, device information, and operating system.</li>
+        <li><strong>Marketing preferences</strong> — your preferences for receiving marketing communications from us.</li>
+      </ul>
+      <p>We do not intentionally collect any special categories of personal data (such as health, race, or political opinions).</p>
+
+      <h2>3. How we use your information</h2>
+      <p>We use your personal data for the following purposes:</p>
+      <ul>
+        <li>To respond to your inquiries, corrections, or partnership requests.</li>
+        <li>To send you our newsletter (“Aurelia Letters”) if you have opted in.</li>
+        <li>To improve our website, content, and user experience.</li>
+        <li>To comply with legal obligations and enforce our terms.</li>
+        <li>To protect against fraud, spam, and abuse.</li>
+      </ul>
+      <p>Our lawful bases for processing your data are: <strong>consent</strong> (for newsletter subscriptions), <strong>legitimate interests</strong> (for responding to messages and improving our services), and <strong>legal obligation</strong> (where applicable).</p>
+
+      <h2>4. Cookies and tracking</h2>
+      <p>We use cookies and similar tracking technologies to enhance your browsing experience and analyse site traffic. For detailed information about the cookies we use and how to manage them, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <div class="highlight-box">
+        <p><strong>Your choice:</strong> You can set your browser to refuse all or some cookies, or to alert you when websites set or access cookies. If you disable cookies, some parts of our site may not function properly.</p>
+      </div>
+
+      <h2>5. Data sharing and disclosure</h2>
+      <p>We do not sell, rent, or trade your personal data. We may share your information with:</p>
+      <ul>
+        <li><strong>Service providers</strong> — trusted third parties who assist us in operating our website, conducting our business, or servicing you (e.g., email delivery platforms, analytics providers). These providers are bound by contractual obligations to keep your data confidential.</li>
+        <li><strong>Legal authorities</strong> — when required by law, regulation, or legal process.</li>
+        <li><strong>Business transfers</strong> — in connection with a merger, acquisition, or sale of assets, your data may be transferred as part of the transaction. We will notify you of any such change.</li>
+      </ul>
+
+      <h2>6. International transfers</h2>
+      <p>Your data may be transferred to, and stored at, destinations outside the United Kingdom or European Economic Area (EEA). Where we transfer data internationally, we ensure appropriate safeguards are in place, such as standard contractual clauses approved by the relevant authorities.</p>
+
+      <h2>7. Data retention</h2>
+      <p>We retain your personal data only for as long as necessary to fulfil the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <ul>
+        <li><strong>Newsletter subscribers:</strong> until you unsubscribe or request deletion.</li>
+        <li><strong>Contact form submissions:</strong> up to 24 months after resolution, unless a longer period is required.</li>
+        <li><strong>Analytics data:</strong> as described in our Cookies Policy (typically up to 26 months).</li>
+      </ul>
+
+      <h2>8. Your rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access</strong> — request a copy of the data we hold about you.</li>
+        <li><strong>Rectification</strong> — request correction of inaccurate or incomplete data.</li>
+        <li><strong>Erasure</strong> — request deletion of your data (“right to be forgotten”).</li>
+        <li><strong>Restriction</strong> — request that we limit processing of your data.</li>
+        <li><strong>Portability</strong> — request transfer of your data to another organisation.</li>
+        <li><strong>Objection</strong> — object to processing based on legitimate interests or for direct marketing.</li>
+        <li><strong>Withdraw consent</strong> — where processing is based on consent, you may withdraw it at any time.</li>
+      </ul>
+      <p>To exercise any of these rights, please email <a href="mailto:privacy@aureliaroomtheory.com">privacy@aureliaroomtheory.com</a>. We will respond within 30 days.</p>
+
+      <h2>9. Data security</h2>
+      <p>We have implemented appropriate technical and organisational measures to protect your personal data against accidental or unlawful destruction, loss, alteration, or unauthorised disclosure. These measures include encryption, access controls, and regular security reviews.</p>
+      <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+      <h2>10. Children’s privacy</h2>
+      <p>Our website is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected such data, please contact us so we can delete it.</p>
+
+      <h2>11. Third-party links</h2>
+      <p>Our website may contain links to third-party sites, plugins, and applications. Clicking on those links may allow third parties to collect or share data about you. We do not control these third-party sites and are not responsible for their privacy practices. We encourage you to read their privacy policies.</p>
+
+      <h2>12. Changes to this policy</h2>
+      <p>We may update this privacy policy from time to time. The “last updated” date at the top of this page indicates when the policy was last revised. We encourage you to review this page periodically to stay informed about how we protect your information.</p>
+
+      <h2>13. Contact us</h2>
+      <div class="contact-ref">
+        <p><strong>Aurelia Room Theory</strong><br>
+        48 Bloom Street<br>
+        London, W1T 3QH<br>
+        United Kingdom</p>
+        <p>Email: <a href="mailto:privacy@aureliaroomtheory.com">privacy@aureliaroomtheory.com</a><br>
+        Editorial: <a href="mailto:editors@aureliaroomtheory.com">editors@aureliaroomtheory.com</a></p>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+      <div>
+        <h2>Aurelia Letters</h2>
+        <p>Weekly essays, project tours, and material discoveries. No noise.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Aurelia Room Theory</h3>
+          <p>An independent journal for interior design, architecture, and the art of living well. Published since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Substack</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Aurelia Room Theory. All rights reserved.</span>
+        <span>Made with care for thoughtful spaces.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // NEWSLETTER FORM
+    document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      if (input.value) {
+        alert('Thank you for subscribing to Aurelia Letters.');
+        input.value = '';
+      }
+    });
+
+    // SEARCH FUNCTIONALITY (demo — redirects to index with query)
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function performSearch() {
+      const query = searchInput.value.trim();
+      if (query) {
+        alert(`Searching for: "${query}" — this would show results on the main journal.`);
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') performSearch();
+    });
+
+    // SMOOTH SCROLL FOR NAV (demo)
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (link.getAttribute('href') !== '#') return;
+        e.preventDefault();
+      });
+    });
+  </script>
+</body>
+</html>

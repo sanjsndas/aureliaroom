@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — Aurelia Room Theory</title>
+  <meta name="description" content="Browse all categories on Aurelia Room Theory: interior design, architecture, materials, lighting, and modern living.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories — Aurelia Room Theory">
+  <meta property="og:description" content="Explore our editorial categories: interior design, architecture, materials, lighting, and modern homes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aureliaroomtheory.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aureliaroomtheory.com/categories.html">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* RESET & BASE — identical to terms/index/about */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #faf9f7;
+      color: #1e1e1e;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* TYPOGRAPHY */
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #8b6b4d;
+      border-bottom: 1px solid #e6e2dd;
+      padding-bottom: 12px;
+      margin-bottom: 28px;
+    }
+
+    /* HEADER — same as index */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e6e2dd;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #1e1e1e;
+      line-height: 1;
+    }
+
+    .logo span {
+      color: #8b6b4d;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-nav a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #3d3d3d;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .main-nav a:hover {
+      color: #8b6b4d;
+    }
+
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: #8b6b4d;
+      transition: width 0.25s;
+    }
+
+    .main-nav a:hover::after {
+      width: 100%;
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      background: #f5f3f0;
+      border-radius: 40px;
+      padding: 6px 16px;
+      border: 1px solid #e6e2dd;
+    }
+
+    .search-wrap input {
+      border: none;
+      background: transparent;
+      padding: 8px 6px 8px 0;
+      font-size: 0.85rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      width: 180px;
+      color: #1e1e1e;
+    }
+
+    .search-wrap input::placeholder {
+      color: #9b9b9b;
+      font-weight: 300;
+    }
+
+    .search-wrap button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #8b6b4d;
+      padding: 4px 0 4px 8px;
+      transition: transform 0.2s;
+    }
+
+    .search-wrap button:hover {
+      transform: scale(1.1);
+    }
+
+    /* CATEGORIES PAGE SPECIFIC */
+    .categories-hero {
+      margin: 40px 0 32px;
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #ece8e3;
+      padding: 56px 48px 48px;
+    }
+
+    .categories-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+
+    .categories-hero h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: #8b6b4d;
+    }
+
+    .categories-hero p {
+      font-size: 1.1rem;
+      color: #3d3d3d;
+      max-width: 760px;
+      line-height: 1.7;
+    }
+
+    .categories-meta {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: #8b6b4d;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      border-top: 1px solid #ece8e3;
+      padding-top: 24px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    /* CATEGORY GRID */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin: 8px 0 56px;
+    }
+
+    .category-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #ece8e3;
+      overflow: hidden;
+      transition: box-shadow 0.25s, transform 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+      transform: translateY(-3px);
+    }
+
+    .category-image {
+      aspect-ratio: 4 / 3;
+      background-color: #f0ede9;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .category-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .category-card:hover .category-image img {
+      transform: scale(1.04);
+    }
+
+    .category-image .category-count {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(30, 30, 30, 0.75);
+      color: #ffffff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 5px 12px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+    }
+
+    .category-body {
+      padding: 26px 28px 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-body h2 {
+      font-size: 1.55rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .category-body h2 a {
+      transition: color 0.2s;
+    }
+
+    .category-body h2 a:hover {
+      color: #8b6b4d;
+    }
+
+    .category-body p {
+      font-size: 0.92rem;
+      color: #5a5a5a;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .category-link {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #8b6b4d;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+      margin-top: auto;
+    }
+
+    .category-link:hover {
+      gap: 12px;
+    }
+
+    .category-link span {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    /* FEATURED STRIP (optional, keeps editorial feel) */
+    .featured-strip {
+      background: #f3efe9;
+      border-radius: 16px;
+      padding: 32px 40px;
+      margin: 0 0 48px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .featured-strip p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #3d3d3d;
+      max-width: 640px;
+      line-height: 1.4;
+    }
+
+    .featured-strip a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #8b6b4d;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      border-bottom: 1px solid #8b6b4d;
+      padding-bottom: 2px;
+      transition: opacity 0.2s;
+    }
+
+    .featured-strip a:hover {
+      opacity: 0.7;
+    }
+
+    /* NEWSLETTER — same as terms/index */
+    .newsletter-section {
+      background: #f3efe9;
+      border-radius: 16px;
+      padding: 40px 44px;
+      margin: 8px 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .newsletter-section h2 {
+      font-size: 1.7rem;
+      font-weight: 500;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .newsletter-section p {
+      font-size: 0.9rem;
+      color: #4a4a4a;
+      max-width: 400px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      padding: 12px 18px;
+      border-radius: 40px;
+      border: 1px solid #d6cec6;
+      background: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      min-width: 220px;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .newsletter-form input:focus {
+      border-color: #8b6b4d;
+    }
+
+    .newsletter-form button {
+      background: #1e1e1e;
+      color: #ffffff;
+      border: none;
+      border-radius: 40px;
+      padding: 12px 28px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .newsletter-form button:hover {
+      background: #8b6b4d;
+      transform: translateY(-1px);
+    }
+
+    /* FOOTER — same as index */
+    .site-footer {
+      background: #1e1e1e;
+      color: #d6d2cd;
+      padding: 56px 0 32px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 320px;
+      color: #a8a29b;
+    }
+
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #b0aaa3;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2f2f2f;
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.75rem;
+      color: #8f8a84;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 16px;
+      }
+      .search-wrap input {
+        width: 140px;
+      }
+      .categories-hero {
+        padding: 32px 24px 28px;
+      }
+      .categories-hero h1 {
+        font-size: 2rem;
+      }
+      .newsletter-section {
+        padding: 28px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .featured-strip {
+        padding: 24px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .category-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+      .main-nav ul {
+        gap: 12px;
+      }
+      .main-nav a {
+        font-size: 0.78rem;
+      }
+      .search-wrap input {
+        width: 100px;
+      }
+      .categories-hero h1 {
+        font-size: 1.7rem;
+      }
+      .categories-meta {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aurelia <span>Room Theory</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- CATEGORIES HERO -->
+    <section class="categories-hero">
+      <h1>Browse <em>Categories</em></h1>
+      <p>Every article on Aurelia Room Theory lives within one of five editorial pillars. Whether you are looking for a specific project, material study, or design philosophy, start here.</p>
+      <div class="categories-meta">
+        <span>5 main categories</span>
+        <span>Updated weekly</span>
+        <span>Curated by our editors</span>
+      </div>
+    </section>
+
+    <!-- CATEGORY GRID -->
+    <div class="category-grid">
+      <!-- 1. Interior Design -->
+      <article class="category-card">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=600&fit=crop"
+            alt="Interior design living space with neutral tones"
+            loading="lazy"
+          >
+          <span class="category-count">24 articles</span>
+        </div>
+        <div class="category-body">
+          <h2><a href="#">Interior Design</a></h2>
+          <p>Residential and hospitality interiors, from full-home renovations to single-room studies. We focus on spatial planning, material honesty, and the quiet details that make a room feel resolved.</p>
+          <a href="#" class="category-link">Explore category <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- 2. Architecture -->
+      <article class="category-card">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop"
+            alt="Modern architecture facade with concrete and glass"
+            loading="lazy"
+          >
+          <span class="category-count">18 articles</span>
+        </div>
+        <div class="category-body">
+          <h2><a href="#">Architecture</a></h2>
+          <p>Built form at every scale — from urban infill to rural retreats. We examine structure, light, and the dialogue between a building and its landscape, without the jargon.</p>
+          <a href="#" class="category-link">Explore category <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- 3. Materials -->
+      <article class="category-card">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?w=800&h=600&fit=crop"
+            alt="Close-up of natural stone and wood materials"
+            loading="lazy"
+          >
+          <span class="category-count">15 articles</span>
+        </div>
+        <div class="category-body">
+          <h2><a href="#">Materials</a></h2>
+          <p>Stone, timber, clay, metal, and the new generation of low-carbon composites. We trace where materials come from, how they age, and why they matter in a changing climate.</p>
+          <a href="#" class="category-link">Explore category <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- 4. Lighting -->
+      <article class="category-card">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&h=600&fit=crop"
+            alt="Warm architectural lighting in a modern interior"
+            loading="lazy"
+          >
+          <span class="category-count">12 articles</span>
+        </div>
+        <div class="category-body">
+          <h2><a href="#">Lighting</a></h2>
+          <p>Daylight strategy, architectural fixtures, and the art of layering light. Practical guidance for designers and homeowners who want rooms that feel good at every hour.</p>
+          <a href="#" class="category-link">Explore category <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- 5. Modern Living -->
+      <article class="category-card">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop"
+            alt="Modern living room with plants and natural light"
+            loading="lazy"
+          >
+          <span class="category-count">21 articles</span>
+        </div>
+        <div class="category-body">
+          <h2><a href="#">Modern Living</a></h2>
+          <p>How we actually live now — small-space strategies, sustainable habits, the objects we keep, and the rituals that turn a house into a considered home.</p>
+          <a href="#" class="category-link">Explore category <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- 6. Design Theory (bonus editorial category, often useful) -->
+      <article class="category-card">
+        <div class="category-image">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+            alt="Design studio desk with sketches and material samples"
+            loading="lazy"
+          >
+          <span class="category-count">9 articles</span>
+        </div>
+        <div class="category-body">
+          <h2><a href="#">Design Theory</a></h2>
+          <p>Essays on proportion, colour, texture, and the philosophical underpinnings of good design. For readers who want to think more deeply about why spaces move us.</p>
+          <a href="#" class="category-link">Explore category <span>→</span></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- FEATURED STRIP -->
+    <section class="featured-strip">
+      <p>“We believe categories are not boxes — they are lenses. Each one helps us see the same room differently.”</p>
+      <a href="#">Read our editorial manifesto →</a>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+      <div>
+        <h2>Aurelia Letters</h2>
+        <p>Weekly essays, project tours, and material discoveries. No noise.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Aurelia Room Theory</h3>
+          <p>An independent journal for interior design, architecture, and the art of living well. Published since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="categories.html">Interior Design</a></li>
+            <li><a href="categories.html">Architecture</a></li>
+            <li><a href="categories.html">Materials</a></li>
+            <li><a href="categories.html">Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Substack</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Aurelia Room Theory. All rights reserved.</span>
+        <span>Made with care for thoughtful spaces.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // NEWSLETTER FORM
+    document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      if (input.value) {
+        alert('Thank you for subscribing to Aurelia Letters.');
+        input.value = '';
+      }
+    });
+
+    // SEARCH FUNCTIONALITY (placeholder)
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    searchBtn.addEventListener('click', () => {
+      const query = searchInput.value.trim();
+      if (query) {
+        alert(`Searching for "${query}" — in the full journal, this would show matching articles.`);
+      }
+    });
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        const query = searchInput.value.trim();
+        if (query) {
+          alert(`Searching for "${query}" — in the full journal, this would show matching articles.`);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
